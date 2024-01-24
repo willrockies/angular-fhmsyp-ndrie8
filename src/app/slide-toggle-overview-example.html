@@ -1,0 +1,3 @@
+<div *ngFor="let data of options">
+	<mat-slide-toggle [id]="data.id" [disabled]="data.disabled" (change)="disableAll($event)">{{data.title}}</mat-slide-toggle>
+</div>
